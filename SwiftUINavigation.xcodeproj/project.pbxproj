@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		570699552AAD10A800ABE746 /* SwiftUINavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699542AAD10A800ABE746 /* SwiftUINavigationApp.swift */; };
-		570699572AAD10A800ABE746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699562AAD10A800ABE746 /* ContentView.swift */; };
+		570699572AAD10A800ABE746 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699562AAD10A800ABE746 /* MainView.swift */; };
 		570699592AAD10A900ABE746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570699582AAD10A900ABE746 /* Assets.xcassets */; };
 		5706995C2AAD10A900ABE746 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5706995B2AAD10A900ABE746 /* Preview Assets.xcassets */; };
+		570699632AAD15D100ABE746 /* BoolTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699622AAD15D100ABE746 /* BoolTabView.swift */; };
+		570699652AAD15F800ABE746 /* ItemTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699642AAD15F800ABE746 /* ItemTabView.swift */; };
+		570699672AAD176800ABE746 /* PresentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699662AAD176800ABE746 /* PresentedView.swift */; };
+		570699692AAD1EF700ABE746 /* EnumTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699682AAD1EF700ABE746 /* EnumTabView.swift */; };
+		5706996B2AAD21DC00ABE746 /* CoordinatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706996A2AAD21DC00ABE746 /* CoordinatorTabView.swift */; };
+		5706996D2AAD226D00ABE746 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706996C2AAD226D00ABE746 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		570699512AAD10A800ABE746 /* SwiftUINavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		570699542AAD10A800ABE746 /* SwiftUINavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINavigationApp.swift; sourceTree = "<group>"; };
-		570699562AAD10A800ABE746 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		570699562AAD10A800ABE746 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		570699582AAD10A900ABE746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5706995B2AAD10A900ABE746 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		570699622AAD15D100ABE746 /* BoolTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTabView.swift; sourceTree = "<group>"; };
+		570699642AAD15F800ABE746 /* ItemTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTabView.swift; sourceTree = "<group>"; };
+		570699662AAD176800ABE746 /* PresentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedView.swift; sourceTree = "<group>"; };
+		570699682AAD1EF700ABE746 /* EnumTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTabView.swift; sourceTree = "<group>"; };
+		5706996A2AAD21DC00ABE746 /* CoordinatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTabView.swift; sourceTree = "<group>"; };
+		5706996C2AAD226D00ABE746 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				570699542AAD10A800ABE746 /* SwiftUINavigationApp.swift */,
-				570699562AAD10A800ABE746 /* ContentView.swift */,
+				570699562AAD10A800ABE746 /* MainView.swift */,
+				570699622AAD15D100ABE746 /* BoolTabView.swift */,
+				570699642AAD15F800ABE746 /* ItemTabView.swift */,
+				570699682AAD1EF700ABE746 /* EnumTabView.swift */,
+				5706996A2AAD21DC00ABE746 /* CoordinatorTabView.swift */,
+				570699662AAD176800ABE746 /* PresentedView.swift */,
+				5706996C2AAD226D00ABE746 /* Coordinator.swift */,
 				570699582AAD10A900ABE746 /* Assets.xcassets */,
 				5706995A2AAD10A900ABE746 /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570699572AAD10A800ABE746 /* ContentView.swift in Sources */,
+				5706996D2AAD226D00ABE746 /* Coordinator.swift in Sources */,
+				570699572AAD10A800ABE746 /* MainView.swift in Sources */,
+				570699672AAD176800ABE746 /* PresentedView.swift in Sources */,
+				570699632AAD15D100ABE746 /* BoolTabView.swift in Sources */,
+				570699652AAD15F800ABE746 /* ItemTabView.swift in Sources */,
+				5706996B2AAD21DC00ABE746 /* CoordinatorTabView.swift in Sources */,
+				570699692AAD1EF700ABE746 /* EnumTabView.swift in Sources */,
 				570699552AAD10A800ABE746 /* SwiftUINavigationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
