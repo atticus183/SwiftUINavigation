@@ -1,11 +1,30 @@
 //
-//  CoordinatorTabView.swift
+//  SheetCoordinatorTabView.swift
 //  SwiftUINavigation
 //
 //  Created by Josh Rondestvedt on 9/9/23.
 //
 
 import SwiftUI
+
+struct SheetCoordinatorTabView: View {
+    @StateObject var sheetCoordinator = SheetCoordinator<CoordinatorTabViewSheetDestination>()
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Button("Go Home") {
+                sheetCoordinator.presentSheet(.home)
+            }
+            Button("Go to Settings") {
+                sheetCoordinator.presentSheet(.settings)
+            }
+            Button("Go to Profile") {
+                sheetCoordinator.presentSheet(.profile)
+            }
+        }
+        .sheetCoordinating(coordinator: sheetCoordinator)
+    }
+}
 
 enum CoordinatorTabViewSheetDestination: String, Identifiable, SheetEnum {
     case home, settings, profile
@@ -34,27 +53,8 @@ enum CoordinatorTabViewSheetDestination: String, Identifiable, SheetEnum {
     }
 }
 
-struct CoordinatorTabView: View {
-    @StateObject var sheetCoordinator = SheetCoordinator<CoordinatorTabViewSheetDestination>()
-
-    var body: some View {
-        VStack(spacing: 20) {
-            Button("Go Home") {
-                sheetCoordinator.presentSheet(.home)
-            }
-            Button("Go to Settings") {
-                sheetCoordinator.presentSheet(.settings)
-            }
-            Button("Go to Profile") {
-                sheetCoordinator.presentSheet(.profile)
-            }
-        }
-        .sheetCoordinating(coordinator: sheetCoordinator)
-    }
-}
-
 struct CoordinatorTabView_Previews: PreviewProvider {
     static var previews: some View {
-        CoordinatorTabView()
+        SheetCoordinatorTabView()
     }
 }

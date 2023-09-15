@@ -35,8 +35,8 @@ struct ItemTabView: View {
     }
 }
 
-struct SecondView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemTabView()
-    }
+// MARK: - SwiftUI Preview
+
+#Preview {
+    ItemTabView()
 }

@@ -1,5 +1,5 @@
 //
-//  Coordinator.swift
+//  SheetCoordinator.swift
 //  SwiftUINavigation
 //
 //  Created by Josh Rondestvedt on 9/9/23.
@@ -9,12 +9,16 @@ import SwiftUI
 
 // Source: https://www.avanderlee.com/swiftui/presenting-sheets/
 
+// MARK: - SheetEnum
+
 protocol SheetEnum: Identifiable {
     associatedtype Body: View
 
     @ViewBuilder
     func view(coordinator: SheetCoordinator<Self>) -> Body
 }
+
+// MARK: - SheetCoordinator
 
 final class SheetCoordinator<Sheet: SheetEnum>: ObservableObject {
     @Published var currentSheet: Sheet?
@@ -39,6 +43,8 @@ final class SheetCoordinator<Sheet: SheetEnum>: ObservableObject {
     }
 }
 
+// MARK: - SheetCoordinating
+
 struct SheetCoordinating<Sheet: SheetEnum>: ViewModifier {
     @StateObject var coordinator: SheetCoordinator<Sheet>
 
@@ -51,6 +57,8 @@ struct SheetCoordinating<Sheet: SheetEnum>: ViewModifier {
             })
     }
 }
+
+// MARK: - View Modifier
 
 extension View {
     func sheetCoordinating<Sheet: SheetEnum>(coordinator: SheetCoordinator<Sheet>) -> some View {

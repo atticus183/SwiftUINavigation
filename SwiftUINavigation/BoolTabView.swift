@@ -23,8 +23,8 @@ struct BoolTabView: View {
     }
 }
 
-struct FirstView_Previews: PreviewProvider {
-    static var previews: some View {
-        BoolTabView()
-    }
+// MARK: - SwiftUI Preview
+
+#Preview {
+    BoolTabView()
 }

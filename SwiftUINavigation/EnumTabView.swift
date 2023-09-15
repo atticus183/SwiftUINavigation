@@ -50,8 +50,8 @@ struct EnumTabView: View {
     }
 }
 
-struct EnumTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        EnumTabView()
-    }
+// MARK: - SwiftUI Preview
+
+#Preview {
+    EnumTabView()
 }

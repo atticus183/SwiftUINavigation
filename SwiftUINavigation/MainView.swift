@@ -25,7 +25,7 @@ struct MainView: View {
                     Label("Enum", systemImage: "gear.circle")
                 }
 
-            CoordinatorTabView()
+            SheetCoordinatorTabView()
                 .tabItem {
                     Label("Coordinator", systemImage: "car")
                 }
@@ -33,8 +33,8 @@ struct MainView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
+// MARK: - SwiftUI Preview
+
+#Preview {
+    MainView()
 }

@@ -14,7 +14,7 @@ struct PresentedView: View {
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 image
                     .resizable()
@@ -30,6 +30,10 @@ struct PresentedView: View {
                             }
                         }
                     }
+
+                NavigationLink("Go to Pushed") {
+                    PushedView()
+                }
             }
         }
     }

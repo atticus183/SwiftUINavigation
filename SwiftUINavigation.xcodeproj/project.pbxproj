@@ -15,8 +15,9 @@
 		570699652AAD15F800ABE746 /* ItemTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699642AAD15F800ABE746 /* ItemTabView.swift */; };
 		570699672AAD176800ABE746 /* PresentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699662AAD176800ABE746 /* PresentedView.swift */; };
 		570699692AAD1EF700ABE746 /* EnumTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570699682AAD1EF700ABE746 /* EnumTabView.swift */; };
-		5706996B2AAD21DC00ABE746 /* CoordinatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706996A2AAD21DC00ABE746 /* CoordinatorTabView.swift */; };
-		5706996D2AAD226D00ABE746 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706996C2AAD226D00ABE746 /* Coordinator.swift */; };
+		5706996B2AAD21DC00ABE746 /* SheetCoordinatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706996A2AAD21DC00ABE746 /* SheetCoordinatorTabView.swift */; };
+		5706996D2AAD226D00ABE746 /* SheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706996C2AAD226D00ABE746 /* SheetCoordinator.swift */; };
+		5706996F2AAD40B500ABE746 /* PushedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706996E2AAD40B500ABE746 /* PushedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +30,9 @@
 		570699642AAD15F800ABE746 /* ItemTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTabView.swift; sourceTree = "<group>"; };
 		570699662AAD176800ABE746 /* PresentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedView.swift; sourceTree = "<group>"; };
 		570699682AAD1EF700ABE746 /* EnumTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTabView.swift; sourceTree = "<group>"; };
-		5706996A2AAD21DC00ABE746 /* CoordinatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTabView.swift; sourceTree = "<group>"; };
-		5706996C2AAD226D00ABE746 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5706996A2AAD21DC00ABE746 /* SheetCoordinatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinatorTabView.swift; sourceTree = "<group>"; };
+		5706996C2AAD226D00ABE746 /* SheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinator.swift; sourceTree = "<group>"; };
+		5706996E2AAD40B500ABE746 /* PushedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +70,10 @@
 				570699622AAD15D100ABE746 /* BoolTabView.swift */,
 				570699642AAD15F800ABE746 /* ItemTabView.swift */,
 				570699682AAD1EF700ABE746 /* EnumTabView.swift */,
-				5706996A2AAD21DC00ABE746 /* CoordinatorTabView.swift */,
+				5706996A2AAD21DC00ABE746 /* SheetCoordinatorTabView.swift */,
 				570699662AAD176800ABE746 /* PresentedView.swift */,
-				5706996C2AAD226D00ABE746 /* Coordinator.swift */,
+				5706996E2AAD40B500ABE746 /* PushedView.swift */,
+				5706996C2AAD226D00ABE746 /* SheetCoordinator.swift */,
 				570699582AAD10A900ABE746 /* Assets.xcassets */,
 				5706995A2AAD10A900ABE746 /* Preview Content */,
 			);
@@ -155,12 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5706996D2AAD226D00ABE746 /* Coordinator.swift in Sources */,
+				5706996D2AAD226D00ABE746 /* SheetCoordinator.swift in Sources */,
 				570699572AAD10A800ABE746 /* MainView.swift in Sources */,
 				570699672AAD176800ABE746 /* PresentedView.swift in Sources */,
 				570699632AAD15D100ABE746 /* BoolTabView.swift in Sources */,
+				5706996F2AAD40B500ABE746 /* PushedView.swift in Sources */,
 				570699652AAD15F800ABE746 /* ItemTabView.swift in Sources */,
-				5706996B2AAD21DC00ABE746 /* CoordinatorTabView.swift in Sources */,
+				5706996B2AAD21DC00ABE746 /* SheetCoordinatorTabView.swift in Sources */,
 				570699692AAD1EF700ABE746 /* EnumTabView.swift in Sources */,
 				570699552AAD10A800ABE746 /* SwiftUINavigationApp.swift in Sources */,
 			);
