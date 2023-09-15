@@ -27,7 +27,12 @@ struct MainView: View {
 
             SheetCoordinatorTabView()
                 .tabItem {
-                    Label("Coordinator", systemImage: "car")
+                    Label("Sheet", systemImage: "car")
+                }
+
+            CoordinatorTabView()
+                .tabItem {
+                    Label("Coordinator", systemImage: "box.truck")
                 }
         }
     }

@@ -32,7 +32,7 @@ struct PresentedView: View {
                     }
 
                 NavigationLink("Go to Pushed") {
-                    PushedView()
+                    FirstView()
                 }
             }
         }
